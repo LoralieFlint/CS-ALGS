@@ -277,3 +277,23 @@ class Solution:
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
 """
+
+# Return Odd > Even
+# Given a list, return True if there are more odd numbers than even numbers, otherwise return False.
+"""
+def oddeven(lst):
+    	odd_list = []
+	even_list = []
+	for i in lst:
+	
+		if (i % 2 == 0):
+			even_list.append(i)
+		else:
+			odd_list.append(i)
+			
+	if len(odd_list) > len(even_list):
+		return True
+	else:
+		return False
+"""
+
